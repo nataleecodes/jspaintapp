@@ -6,11 +6,13 @@ const sizeForm = document.getElementById("sizePicker");
 // When size is submitted by the user, get size input & call makeGrid()
 sizeForm.addEventListener('submit', function() {
     event.preventDefault();
+    
     // Access the size picker input , set up storage for grid height and width input from user
     let height = null;
     let width = null;
     height = document.getElementById("input_height").value;
     width = document.getElementById("input_width").value;
+    
     //Clear previous table before building a new one
     grid.innerHTML = "";
     makeGrid(height, width);
@@ -22,6 +24,14 @@ let newColor = "black";
 $('#colorPicker').on('change', function() {
     newColor = $('#colorPicker').val();
 });
+
+//document.querySelector('#colorPicker').addEventListener('change', function(){
+//   newColor = document.querySelector('#colorPicker').val(); 
+//});
+//
+//document.querySelector('#Email').addEventListener('change',function(){
+//    document.querySelector('#UserName').value = this.value;
+//});
 
 
 // Function to set up the design canvas grid 

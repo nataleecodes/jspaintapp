@@ -1,14 +1,16 @@
 body {
+    font-family: "Arimo", Arial;
     text-align: center;
 }
 
 h1 {
-    font-family: Monoton;
+    font-family: "Pacifico", Times;
     font-size: 70px;
     margin: 0.2em;
 }
 
 h2 {
+    font-family: "Arimo", Arial;
     margin: 1em 0 0.25em;
 }
 
